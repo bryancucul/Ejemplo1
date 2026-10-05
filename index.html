@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mejor Jugador del Mundo😎😜</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Papyrus;
+            background: linear-gradient( green 50px, yellow  100%);
+
+        }
+        h1 {
+            color: #ffae42;
+            text-shadow: 2px 2px 0px #ff007f, 4px 4px 0px #ff0055, 6px 6px 0px #000000;   
+            text-align: center;
+            text-decoration: dotted;
+        }
+        h2{
+            color: rgb(207, 74, 74);
+            text-shadow: 2px 2px 4px rgba(80, 8, 214, 0.5);
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                      "header header"
+                      "sidebar main"
+                      "footer footer";
+        }
+        header{
+            grid-area: header;
+            background-color: #333;
+            color: black;
+            padding: 1rem;
+        }
+        aside{
+            grid-area: sidebar;
+            background:#1676d6;
+            padding: 1rem;
+        }
+        aside a{
+            color:white;
+            text-decoration:none;
+        }
+
+        aside a:hover{
+             color:#ffae42;
+        }
+        main{
+            grid-area: main;
+            padding: 30px;
+            background:linear-gradient(to bottom,#88cee4,#8ebff0);
+        }
+        p{
+             line-height:1.7;
+            margin-bottom: 20px;
+        }
+        footer {
+  grid-area: footer;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+img{
+    width:200px;
+    border-radius:10px;
+    margin:auto;
+    box-shadow:0 5px 15px rgba(44, 170, 243, 0.3);
+    gap: 20px;
+}
+h2, h3, h4 {
+    text-align: left;
+    color:black;
+    text-shadow: 1px  1px 0 #ff0055;
+}
+img{
+    transition:0.3s;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+.galeria img{
+    margin: 10px;
+}
+.galeria{
+    display: flex;
+    gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cristiano Ronaldo dos Santos Aveiro</h1>
+
+        </header>
+        <aside>
+            <nav>
+                <li><a href="https://www.youtube.com/watch?v=2xCfGHIP3vY&t=21s">Historia</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Lo28IO-zztk&t=72s">Mejores jugadas</a></li>
+                <li><a href="https://www.youtube.com/watch?v=AdU-scOuRBk">Títulos</a></li>
+            </nav>
+        </aside>
+        <main>
+            <h2>Bienvenidos, disfruten viendo la historia y las mejores jugadas del mejor jugador del mundo.</h2>
+            <h3> 
+                ¿Quién es Cristiano Ronaldo dos Santos Aveiro?
+                <br>
+                Cristiano Ronaldo es un famoso futbolista y empresario portugués, ampliamente considerado como uno de los mejores jugadores de la historia de este deporte. Nació en Funchal, Madeira, el 5 de febrero de 1985
+            </h3>
+              <td>
+                <img src="https://c.files.bbci.co.uk/8B70/production/_102469653_gettyimages-962792890.jpg" alt="Conoce al mejor del mundo en futbol.">
+              </td>
+              <br>
+              <h4>Los títulos que ha obtenido Cristiano Ronaldo durante su carrera.</h4>
+              <td>
+                <div class="galeria">
+
+                    <h4>Titulos en el Real Madrid, Juventus, Manchester United, Al nassr</h4>
+                <img src="https://pbs.twimg.com/media/FYihJHEXEAAMS0t.jpg" alt="Cristiano Ronaldo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ECXA_bSfNTsnjiw5VVwep3B0Hl_-tFTUDEYNjNnubWRS1IwJq_UURUbu&s=10" alt="Cristiano Ronaldo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1fkbCpVqiVNnfHzyW4OkQgw4nKUKHnp8Los49lLhWT3PNUChGNHCO5g&s=10" alt="Cristiano Ronaldo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_jdLOdZynTPneCOp5SJ4p97PlLOD30_OEZNC7zci7aw&s" alt="Cristiano Ronaldo">
+
+               </div>
+              </td>
+
+        </main>
+        <footer>
+            <p>&copy; Derechos reservados de autor</p>
+        </footer>
+    </div>
+</body>
+</html>
